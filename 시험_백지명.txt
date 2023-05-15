@@ -1,0 +1,56 @@
+https://github.com/jimyoung98/ServerTest 깃 주소
+
+db 스키마 use student
+
+포스트맨 예시
+{{base}} 는 http://localhost:8080
+학생정보 post
+{{base}}/student/
+{
+    "si_number": "10101",
+    "si_name": "ㅁㄴㅇㄹ",
+    "si_hp": "010005641156",
+    "si_email": "rksk@sakd.com",
+    "si_address": "김암낭ㅁ남ㄴ아"
+}
+
+학생정보 put
+여러개도 수정가능
+{{base}}/student/1
+{
+    
+    
+    "si_address": "백백아니안"
+}
+
+학생정보 get
+{{base}}/student/
+
+학번에 맞는 학생정보 get
+{{base}}/student/10101
+
+학생정보 delete
+{{base}}/student/1
+
+학생 점수 post
+{{base}}/score/1
+{
+    
+    "ss_Java": 50,
+    "ss_Python": 60,
+    "ss_C": 70
+}
+
+학생점수 put
+{{base}}/score/1
+원하는 점수 필드 수정 가능
+{
+    
+    
+    "ss_Python": 90,
+    "ss_C": 90
+
+}
+
+학생점수 delete
+{{base}}/score/1
